@@ -39,6 +39,11 @@ controller.hears(['hello', 'hi'], ['direct_message'], function (bot, message) {
   bot.reply(message, 'It\'s nice to talk to you directly.')
 })
 
+controller.hears(['xur'], ['direct_message'], function (bot, message) {
+  bot.reply(message, 'I\'m not him, yet.')
+  bot.reply(message, 'It\'s nice to talk to you directly.')
+})
+
 controller.hears('.*', ['mention'], function (bot, message) {
   bot.reply(message, 'You really do care about me. :heart:')
 })
